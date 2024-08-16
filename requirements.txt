@@ -1,0 +1,12 @@
+allure-pytest==2.13.5
+allure-python-commons==2.13.5
+attrs==24.2.0
+charset-normalizer==3.3.2
+greenlet==3.0.3
+iniconfig==2.0.0
+packaging==24.1
+playwright==1.45.1
+pytest==8.3.2
+pytest-base-url==2.1.0
+pytest-playwright==0.5.1
+requests==2.32.3
