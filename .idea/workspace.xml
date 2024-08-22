@@ -4,16 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9a2207dc-035d-4490-bd9d-60857e39f92f" name="Changes" comment="init">
-      <change afterPath="$PROJECT_DIR$/ui/pages/sign_up_form_page.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ui/pages/sign_up_page_two.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ui/tests/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ui/tests/conftest.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ui/tests/login_test.py" afterDir="false" />
+    <list default="true" id="9a2207dc-035d-4490-bd9d-60857e39f92f" name="Changes" comment="add login checks">
+      <change afterPath="$PROJECT_DIR$/ui/tests/menu_test.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ui/pages/login_page.py" beforeDir="false" afterPath="$PROJECT_DIR$/ui/pages/login_page.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ui/tests/__init__..py" beforeDir="false" afterPath="$PROJECT_DIR$/ui/pages/main_page.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ui/pages/main_page.py" beforeDir="false" afterPath="$PROJECT_DIR$/ui/pages/main_page.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ui/tests/login_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/ui/tests/login_test.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -55,7 +50,11 @@
   "keyToString": {
     "Python tests.Python tests for conftest.test_with_cookie.executor": "Run",
     "Python tests.Python tests for login_test.test_login_success.executor": "Run",
+    "Python tests.Python tests for login_test.test_register_existing_email.executor": "Run",
     "Python tests.Python tests for login_test.test_register_successful.executor": "Run",
+    "Python tests.Python tests for menu_test.test_navigation_to_products_page.executor": "Run",
+    "Python tests.Python tests for menu_test.test_navigation_to_test_cases_page.executor": "Run",
+    "Python tests.Python tests for menu_test.test_navigation_to_video_tutorials_page.executor": "Run",
     "Python tests.Python tests in login_test.py.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "master"
@@ -66,8 +65,8 @@
       <recent name="C:\Users\user\PycharmProjects\playwright_auto\ui\tests" />
     </key>
   </component>
-  <component name="RunManager" selected="Python tests.Python tests for login_test.test_login_success">
-    <configuration name="Python tests for conftest.test_with_cookie" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Python tests.Python tests for menu_test.test_navigation_to_contact_us_page">
+    <configuration name="Python tests for login_test.test_register_existing_email" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
       <module name="playwright_auto" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -78,11 +77,11 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;conftest.test_with_cookie&quot;" />
+      <option name="_new_target" value="&quot;login_test.test_register_existing_email&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="Python tests for login_test.test_login_success" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+    <configuration name="Python tests for menu_test.test_navigation_to_contact_us_page" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
       <module name="playwright_auto" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -93,11 +92,11 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;login_test.test_login_success&quot;" />
+      <option name="_new_target" value="&quot;menu_test.test_navigation_to_contact_us_page&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="Python tests for login_test.test_register_successful" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+    <configuration name="Python tests for menu_test.test_navigation_to_products_page" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
       <module name="playwright_auto" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -108,15 +107,47 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;login_test.test_register_successful&quot;" />
+      <option name="_new_target" value="&quot;menu_test.test_navigation_to_products_page&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Python tests for menu_test.test_navigation_to_test_cases_page" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+      <module name="playwright_auto" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/ui/tests" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;menu_test.test_navigation_to_test_cases_page&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Python tests for menu_test.test_navigation_to_video_tutorials_page" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+      <module name="playwright_auto" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/ui/tests" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;menu_test.test_navigation_to_video_tutorials_page&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python tests.Python tests for login_test.test_login_success" />
-        <item itemvalue="Python tests.Python tests for login_test.test_register_successful" />
-        <item itemvalue="Python tests.Python tests for conftest.test_with_cookie" />
+        <item itemvalue="Python tests.Python tests for menu_test.test_navigation_to_contact_us_page" />
+        <item itemvalue="Python tests.Python tests for menu_test.test_navigation_to_video_tutorials_page" />
+        <item itemvalue="Python tests.Python tests for menu_test.test_navigation_to_test_cases_page" />
+        <item itemvalue="Python tests.Python tests for menu_test.test_navigation_to_products_page" />
+        <item itemvalue="Python tests.Python tests for login_test.test_register_existing_email" />
       </list>
     </recent_temporary>
   </component>
@@ -144,11 +175,20 @@
       <option name="project" value="LOCAL" />
       <updated>1723797938413</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="add login checks">
+      <option name="closed" value="true" />
+      <created>1724331968517</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1724331968517</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="init" />
-    <option name="LAST_COMMIT_MESSAGE" value="init" />
+    <MESSAGE value="add login checks" />
+    <option name="LAST_COMMIT_MESSAGE" value="add login checks" />
   </component>
 </project>

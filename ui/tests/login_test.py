@@ -55,11 +55,27 @@ def test_login_success(login_page, main_page, register_user):
 @allure.story('Login Feature')
 @allure.title('Авторизаиця с некорректными учетными данными')
 @allure.severity(allure.severity_level.CRITICAL)
-def test_login_success(login_page, main_page, register_user):
+def test_login_fail(login_page, main_page, register_user):
 
     main_page.click_login_btn()
     main_page.click_logout()
     login_page.fill_email_input_login('uncorrect@gmail.com')
+    login_page.fill_password_login('000000')
+    login_page.login()
+
+    assert login_page.err_msg
+
+
+@pytest.mark.login
+@allure.feature('Login')
+@allure.story('Login Feature')
+@allure.title('Register User with existing email')
+def test_register_existing_email(login_page, main_page, register_user):
+    email, password, name = register_user
+
+    main_page.click_login_btn()
+    main_page.click_logout()
+    login_page.fill_email_input_signup(email)
     login_page.fill_password_login('000000')
     login_page.login()
 
