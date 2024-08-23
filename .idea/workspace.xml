@@ -4,11 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9a2207dc-035d-4490-bd9d-60857e39f92f" name="Changes" comment="add login checks">
-      <change afterPath="$PROJECT_DIR$/ui/tests/menu_test.py" afterDir="false" />
+    <list default="true" id="9a2207dc-035d-4490-bd9d-60857e39f92f" name="Changes" comment="add menu checks">
+      <change afterPath="$PROJECT_DIR$/ui/pages/contact_page.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ui/pages/product_page.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ui/pages/products_page.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ui/tests/contact_form_test.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ui/tests/products_test.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ui/pages/main_page.py" beforeDir="false" afterPath="$PROJECT_DIR$/ui/pages/main_page.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ui/tests/login_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/ui/tests/login_test.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ui/tests/conftest.py" beforeDir="false" afterPath="$PROJECT_DIR$/ui/tests/conftest.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,12 +52,15 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "Python tests.Python tests for conftest.test_with_cookie.executor": "Run",
+    "Python tests.Python tests for contact_form_test.test_contact_form_success.executor": "Run",
     "Python tests.Python tests for login_test.test_login_success.executor": "Run",
     "Python tests.Python tests for login_test.test_register_existing_email.executor": "Run",
     "Python tests.Python tests for login_test.test_register_successful.executor": "Run",
+    "Python tests.Python tests for menu_test.test_navigation_to_contact_us_page.executor": "Run",
     "Python tests.Python tests for menu_test.test_navigation_to_products_page.executor": "Run",
     "Python tests.Python tests for menu_test.test_navigation_to_test_cases_page.executor": "Run",
     "Python tests.Python tests for menu_test.test_navigation_to_video_tutorials_page.executor": "Run",
+    "Python tests.Python tests for products_test.test_navigation_tot_product_card.executor": "Run",
     "Python tests.Python tests in login_test.py.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "master"
@@ -65,8 +71,8 @@
       <recent name="C:\Users\user\PycharmProjects\playwright_auto\ui\tests" />
     </key>
   </component>
-  <component name="RunManager" selected="Python tests.Python tests for menu_test.test_navigation_to_contact_us_page">
-    <configuration name="Python tests for login_test.test_register_existing_email" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Python tests.Python tests for products_test.test_navigation_tot_product_card">
+    <configuration name="Python tests for contact_form_test.test_contact_form_success" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
       <module name="playwright_auto" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -77,7 +83,7 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;login_test.test_register_existing_email&quot;" />
+      <option name="_new_target" value="&quot;contact_form_test.test_contact_form_success&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
@@ -93,21 +99,6 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
       <option name="_new_target" value="&quot;menu_test.test_navigation_to_contact_us_page&quot;" />
-      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
-      <method v="2" />
-    </configuration>
-    <configuration name="Python tests for menu_test.test_navigation_to_products_page" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
-      <module name="playwright_auto" />
-      <option name="ENV_FILES" value="" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/ui/tests" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;menu_test.test_navigation_to_products_page&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
@@ -141,13 +132,35 @@
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
+    <configuration name="Python tests for products_test.test_navigation_tot_product_card" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+      <module name="playwright_auto" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/ui/tests" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_additionalArguments" value="&quot;--headed&quot;" />
+      <option name="_new_target" value="&quot;products_test.test_navigation_tot_product_card&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="Python tests.Python tests for contact_form_test.test_contact_form_success" />
+      <item itemvalue="Python tests.Python tests for menu_test.test_navigation_to_contact_us_page" />
+      <item itemvalue="Python tests.Python tests for menu_test.test_navigation_to_test_cases_page" />
+      <item itemvalue="Python tests.Python tests for menu_test.test_navigation_to_video_tutorials_page" />
+      <item itemvalue="Python tests.Python tests for products_test.test_navigation_tot_product_card" />
+    </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python tests.Python tests for products_test.test_navigation_tot_product_card" />
+        <item itemvalue="Python tests.Python tests for contact_form_test.test_contact_form_success" />
         <item itemvalue="Python tests.Python tests for menu_test.test_navigation_to_contact_us_page" />
         <item itemvalue="Python tests.Python tests for menu_test.test_navigation_to_video_tutorials_page" />
         <item itemvalue="Python tests.Python tests for menu_test.test_navigation_to_test_cases_page" />
-        <item itemvalue="Python tests.Python tests for menu_test.test_navigation_to_products_page" />
-        <item itemvalue="Python tests.Python tests for login_test.test_register_existing_email" />
       </list>
     </recent_temporary>
   </component>
@@ -183,12 +196,21 @@
       <option name="project" value="LOCAL" />
       <updated>1724331968517</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="add menu checks">
+      <option name="closed" value="true" />
+      <created>1724335969241</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1724335969241</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="init" />
     <MESSAGE value="add login checks" />
-    <option name="LAST_COMMIT_MESSAGE" value="add login checks" />
+    <MESSAGE value="add menu checks" />
+    <option name="LAST_COMMIT_MESSAGE" value="add menu checks" />
   </component>
 </project>

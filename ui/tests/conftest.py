@@ -2,12 +2,14 @@ import pytest
 import requests
 from playwright.sync_api import sync_playwright, BrowserContext, Page
 
+from ui.pages.contact_page import ContactPage
 from ui.pages.login_page import LoginPage
 from ui.pages.main_page import MainPage
+from ui.pages.product_page import ProductPage
+from ui.pages.products_page import ProductsPage
 from ui.pages.sign_up_form_page import SignupFormPage
 from ui.pages.sign_up_page_two import SignupPageTwo
 from faker import Faker
-
 
 fake = Faker()
 
@@ -70,6 +72,20 @@ def sign_up_form_page(page: Page):
 def sign_up_page_two(page: Page):
     return SignupPageTwo(page)
 
+
+@pytest.fixture
+def contact_form_page(page: Page):
+    return ContactPage(page)
+
+
+@pytest.fixture
+def products_page(page: Page):
+    return ProductsPage(page)
+
+
+@pytest.fixture
+def product_page(page: Page):
+    return ProductPage(page)
 
 @pytest.fixture
 def register_user(main_page, login_page, sign_up_form_page, sign_up_page_two):
