@@ -14,6 +14,9 @@ class MainPage:
         self.contact_link = page.locator('//li/a[contains(normalize-space(text()), "Contact us")]')
         self.api_link = page.locator('//li/a[contains(normalize-space(text()), "API Testing")]')
 
+        self.subscription_input = page.locator('#susbscribe_email')
+        self.success_msg_subscribe = page.locator('#success-subscribe > .alert-success.alert')
+
     def click_login_btn(self):
         self.login_btn.click()
 
@@ -22,3 +25,6 @@ class MainPage:
 
     def get_url(self):
         return self.page.url
+
+    def fill_subscription_email(self, email):
+        self.subscription_input.fill(email)
